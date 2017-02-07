@@ -25,3 +25,7 @@ $ docker run  --privileged \
   -e DOCKER_DAEMON_ARGS=--registry-mirror=http://mymirror:6000 \
   -d jack12816/docker:dind
 ```
+
+There is a new `DOCKER_DAEMON_STORAGE` environment variable. With the help
+of this you can easily change the storage driver. It defaults to `vfs` like
+the original image.
